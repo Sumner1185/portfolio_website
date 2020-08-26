@@ -44,7 +44,7 @@
 /* general styles */
 
 html {
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
