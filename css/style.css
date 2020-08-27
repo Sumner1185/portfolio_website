@@ -132,7 +132,7 @@ h3 { font-size: var(--fs-h3) }
 .section__subtitle--work {
   color: var(--clr-accent);
   font-weight: var(--fw-bold);
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 /* header */
@@ -389,11 +389,16 @@ header {
 .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 1em;
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
+  background: var(--clr-dark);
   overflow: hidden;
+}
+
+.portfolio__item-name {
+  color: var(--clr-accent);
 }
 
 .portfolio__img {
