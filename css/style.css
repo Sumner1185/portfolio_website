@@ -302,6 +302,56 @@ header {
   }
 }
 
+.portfolio__3-intro {
+  position: relative;
+  padding-bottom: 1em;
+}
+
+@media (min-width: 600px) {
+  .portfolio__3-intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+}
+
+.portfolio__2-intro {
+  position: relative;
+  padding-bottom: 1em;
+}
+
+.portfolio__2-intro__img {
+  box-shadow: var(--bs);
+  object-fit: cover;
+  width: auto;
+  height: 200px;
+}
+
+@media (min-width: 600px) {
+  .portfolio__2-intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .portfolio__2-intro__img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
 /* my services section */
 
 .my-services {
@@ -515,5 +565,15 @@ header {
   margin-right: auto;
   width: 50%;
   padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.portfolio3-item-individual-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 250px;
+  width: auto;
+  padding-top: 0.5em;
   padding-bottom: 1em;
 }
